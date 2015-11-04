@@ -96,10 +96,7 @@ ymaps.ready()
 				controls: ['zoomControl']
 			});
 		
-		myMap[[+idMap]].controls.add(new ymaps.control.TypeSelector({options: { position: { left: 10, top: 10 }}}));
-		
-		//var layout = ymaps.templateLayoutFactory.createClass('<div class="{{properties.imageClass}}">{% include default#image %}<div style="height:27px; background: rgba(255,255,255,.75);display: inline-block;vertical-align: top;z-index: 1;padding: 0 5px 0 19px;margin-left: -14px;border-radius: 5px;max-width: 200px;text-overflow: ellipsis;overflow: hidden;">[if properties.iconContent]$[properties.iconContent][else]$[properties.hintContent][endif]</div></div>');
-		
+		myMap[[+idMap]].controls.add(new ymaps.control.TypeSelector({ options: { position: { left: 10, top: 10 }}}));
 		
 		/*
 		myPlacemark = new ymaps.Placemark(myMap[[+idMap]].getCenter(), {
@@ -109,7 +106,7 @@ ymaps.ready()
 		}, {
 			pointOverlay: ymaps.overlay.html.Placemark,
 			preset: 'twirl#stretchyIcon',
-			iconLayout: ymaps.templateLayoutFactory.createClass('<div class="{{properties.imageClass}} _active"><div class="{{properties.imageClass}}__icon"></div><div class="{{properties.imageClass}}__title">[if properties.iconContent]<i>$[properties.iconContent]</i>[else]$[properties.hintContent][endif]</div></div>')
+			iconLayout: ymaps.templateLayoutFactory.createClass('<div class="$[properties.imageClass] _active"><div class="$[properties.imageClass]__icon"></div><div class="$[properties.imageClass]__title">[if properties.iconContent]<i>$[properties.iconContent]</i>[else]$[properties.hintContent][endif]</div></div>')
 			//iconContentLayout: ymaps.templateLayoutFactory.createClass( '<div style="width:auto; max-width:none; background-color:rgba(255,255,255,0.49);">[if properties.iconContent]<i>$[properties.iconContent]</i>[else]$[properties.hintContent][endif]</div>' )
 		});
 		
@@ -158,7 +155,7 @@ ymaps.ready()
 		$.getJSON( ymFormAction , "ymJSON=1" ).done( function (json) {
 			window.geoObjects = ymaps.geoQuery(json);
 			
-			window.clusters = geoObjects.search("geometry.type == 'Point'").clusterize({preset: 'islands#invertedVioletClusterIcons'});
+			window.clusters = geoObjects.search("geometry.type == 'Point'").clusterize({ preset: 'islands#invertedVioletClusterIcons'});
 			myMap[[+idMap]].geoObjects.add(clusters);
 			
 			
