@@ -1,0 +1,1 @@
+<div id="yandexmaps-panel-home-div"></div>

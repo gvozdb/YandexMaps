@@ -1,0 +1,85 @@
+
+#yandexmaps-search-form {
+	display: block;
+	margin: 5px 0;
+	overflow: hidden;
+}
+#yandexmaps-search-form input.yandexmaps-form-text {
+	margin: 5px 10px 5px 0;
+	width: 79%;
+	padding: 4px;
+}
+#yandexmaps-search-form input.yandexmaps-form-submit {
+	margin: 0;
+	width: 14%;
+	padding: 4px;
+}
+.yandexmaps-terms {
+	text-align: right;
+}
+.yandexmaps-map-blocks-wrapper { position:relative; width:799px; }
+.yandexmaps-map-wrapper { position:relative; width:100%; height:499px; margin:10px 0; }
+.yandexmaps-map { width:100%; height:100%; margin:0px 0; }
+
+
+
+
+
+.search-map-result-view {
+display: inline-block;
+white-space: nowrap;
+position: relative;
+top: -13.5px;
+left: -13.5px;
+height: 27px;
+}
+.search-map-result-view._active {
+top: -42px;
+}
+
+.search-map-result-view__overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: 3;
+cursor: pointer;
+}
+
+.search-map-result-view__icon {
+background: url("//yastatic.net/maps-beta/_/QGuTq1D4vadJPJijE7xfGoI0UBY.svg");
+width: 27px;
+height: 27px;
+}
+.search-map-result-view__icon {
+display: inline-block;
+position: relative;
+vertical-align: middle;
+z-index: 2;
+}
+.search-map-result-view._active .search-map-result-view__icon {
+background: url("//yastatic.net/maps-beta/_/ZDo_aSO8szfWh3gPYVWHwgyDa_E.svg");
+width: 34px;
+height: 42px;
+}
+.search-map-result-view__title {
+height: 27px;
+line-height: 27px;
+}
+.search-map-result-view__title {
+background: rgba(255,255,255,.89);
+display: inline-block;
+vertical-align: top;
+z-index: 1;
+padding: 0 5px 0 19px;
+margin-left: -14px;
+border-radius: 5px;
+border:1px solid #ddd;
+max-width: none;
+text-overflow: ellipsis;
+overflow: hidden;
+font-size:13px;
+}
+.search-map-result-view._active .search-map-result-view__title:not(:empty) {
+display: inline-block;
+margin-left: -21px;
+}
