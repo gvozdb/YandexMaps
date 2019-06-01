@@ -1,18 +1,17 @@
 
 #yandexmaps-search-form {
-	display: block;
-	margin: 5px 0;
-	overflow: hidden;
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
 }
 #yandexmaps-search-form input.yandexmaps-form-text {
-	margin: 5px 10px 5px 0;
-	width: 79%;
+	width: 100%;
 	padding: 4px;
 }
 #yandexmaps-search-form input.yandexmaps-form-submit {
 	margin: 0;
-	width: 14%;
-	padding: 4px;
+	margin-left: 10px;
+	padding: 8px 40px;
 }
 .yandexmaps-terms {
 	text-align: right;

@@ -1,15 +1,16 @@
 <div class="yandexmaps-map-blocks-wrapper">
 	<form id="yandexmaps-search-form">
-		<input type="text" id="suggest" class="yandexmaps-form-text" placeholder="{$modx->lexicon('yandexmaps_search')}" value="" />
-		<input type="submit" class="yandexmaps-form-submit" value="Найти" />
+		<input type="text" id="suggest" class="x-form-text x-form-field yandexmaps-form-text" placeholder="{$modx->lexicon('yandexmaps_search')}" value="" />
+		<input type="submit" class="x-btn primary-button yandexmaps-form-submit" value="Найти" />
 	</form>
 	<div class="yandexmaps-map-wrapper">
 		<div id="tv{$tv->id}YaMap" class="yandexmaps-map"></div>
 	</div>
+	<div class="x-form-element">
+		<input type="text" id="tv{$tv->id}" name="tv{$tv->id}" value="{$tv->value}" class="textfield" placeholder="{$modx->lexicon('yandexmaps_coords')}" />
+	</div>
 </div>
 
-
-<input type="text" id="tv{$tv->id}" name="tv{$tv->id}" value="{$tv->value}" class="textfield" placeholder="{$modx->lexicon('yandexmaps_coords')}" />
 
 <script type="text/javascript">
 // <![CDATA[
