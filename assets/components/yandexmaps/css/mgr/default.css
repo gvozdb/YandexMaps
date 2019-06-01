@@ -13,6 +13,9 @@
 	margin-left: 10px;
 	padding: 8px 40px;
 }
+#yandexmaps-search-form input.yandexmaps-form-submit:focus {
+	box-shadow: none;
+}
 .yandexmaps-terms {
 	text-align: right;
 }
