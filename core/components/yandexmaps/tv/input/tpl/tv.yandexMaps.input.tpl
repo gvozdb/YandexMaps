@@ -1,6 +1,6 @@
 <div class="yandexmaps-map-blocks-wrapper">
 	<form id="yandexmaps-search-form">
-		<input type="text" id="suggest" class="yandexmaps-form-text" placeholder="Поиск на карте" value="" />
+		<input type="text" id="suggest" class="yandexmaps-form-text" placeholder="{$modx->lexicon('yandexmaps_search')}" value="" />
 		<input type="submit" class="yandexmaps-form-submit" value="Найти" />
 	</form>
 	<div class="yandexmaps-map-wrapper">
@@ -9,7 +9,7 @@
 </div>
 
 
-<input type="text" id="tv{$tv->id}" name="tv{$tv->id}" value="{$tv->value}" class="textfield"  />
+<input type="text" id="tv{$tv->id}" name="tv{$tv->id}" value="{$tv->value}" class="textfield" placeholder="{$modx->lexicon('yandexmaps_coords')}" />
 
 <script type="text/javascript">
 // <![CDATA[
