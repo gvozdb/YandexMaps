@@ -3,6 +3,25 @@
 $settings = array();
 
 $tmp = array(
+    /**
+     * Main
+     */
+    'admin_ymaps_url' => array(
+        'xtype' => 'textfield',
+        'area' => 'yandexmaps_main',
+        'value' => '//api-maps.yandex.ru/2.1/?lang=ru_RU&onload=ymOnLoad&load=Map,Placemark,GeoObjectCollection,map.addon.balloon,geoObject.addon.balloon,package.controls,templateLayoutFactory,overlay.html.Placemark,SuggestView',
+    ),
+    'admin_tv_coords' => array(
+        'xtype' => 'textfield',
+        'value' => "",
+        'area' => 'yandexmaps_main',
+    ),
+    'admin_tv_zoom' => array(
+        'xtype' => 'numberfield',
+        'value' => '',
+        'area' => 'yandexmaps_main',
+    ),
+
 	'field_full_address' => array(
 		'xtype' => 'textfield',
 		'value' => '',
@@ -13,17 +32,10 @@ $tmp = array(
 		'value' => "++Страна: --country--, ++++--region--, ++++--subregion--, ++++Город: --city--, ++++Район: --district--, ++++--district2--, ++++--street--, ++++д. --house--, ++++--premise--++",
 		'area' => 'yandexmaps_main',
 	),
-	'admin_tv_coords' => array(
-		'xtype' => 'textfield',
-		'value' => "",
-		'area' => 'yandexmaps_main',
-	),
-	'admin_tv_zoom' => array(
-		'xtype' => 'numberfield',
-		'value' => '',
-		'area' => 'yandexmaps_main',
-	),
-	
+
+    /**
+     * Fields
+     */
 	'field_country' => array(
 		'xtype' => 'textfield',
 		'value' => "",

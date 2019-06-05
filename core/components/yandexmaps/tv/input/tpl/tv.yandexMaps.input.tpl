@@ -106,7 +106,7 @@ Ext.onReady(function(){
 
 <script type="text/javascript">
 // Функция подгрузки подсказок
-function onLoad (ymaps)
+function ymOnLoad (ymaps)
 {
 	window.suggestView = new ymaps.SuggestView('suggest', {literal}{'results':'9'}{/literal});
 }
