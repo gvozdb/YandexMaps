@@ -106,10 +106,10 @@ Ext.onReady(function(){
 
 <script type="text/javascript">
 // Функция подгрузки подсказок
-function ymOnLoad (ymaps)
-{
-	window.suggestView = new ymaps.SuggestView('suggest', {literal}{'results':'9'}{/literal});
-}
+//function ymOnLoad (ymaps)
+//{
+//	window.suggestView = new ymaps.SuggestView('suggest', {literal}{'results':'9'}{/literal});
+//}
 
 // Функция замены строки
 function str_replace (needle, replacement, haystack)
@@ -177,6 +177,8 @@ Ext.onReady(function(){
 		
 		
 		// >> Слушаем клик на подсказках в поиске
+		var suggestView = new ymaps.SuggestView('suggest', {'results': '9'});
+		
 		suggestView.events.add('select', function (e) {
 			var address = e.get('item').value;
 			//console.log( address );
